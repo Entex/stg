@@ -45,11 +45,11 @@ int main(int argc, char const *argv[])
 	int o = 20;         //odds of being a path between nodes
 	int i = 1, av = 0;
 
-    //Check for help
-    if(argc >= 2 && strcmp(argv[1],"-h") == 0){
-        printf("rnt [-s] [-n] [-l]\r\nGenerates a tree structure with random values\r\n\r\nOptions:\r\n -s number\t Set the seed for the random generator(default goes after time)\r\n -n number\t Set the number of nodes(default 4)\r\n -l number\t Set the maximum length between nodes(default 10)\r\n -o [1-100]\t Set the odds for paths to exist between nodes(default 20)\r\n");
-        return 0;
-    }
+	//Check for help
+	if(argc >= 2 && strcmp(argv[1],"-h") == 0){
+		printf("rnt [-s] [-n] [-l]\r\nGenerates a tree structure with random values\r\n\r\nOptions:\r\n -s number\t Set the seed for the random generator(default goes after time)\r\n -n number\t Set the number of nodes(default 4)\r\n -l number\t Set the maximum length between nodes(default 10)\r\n -o [1-100]\t Set the odds for paths to exist between nodes(default 20)\r\n");
+		return 0;
+	}
 
 	//Init with arguments
 	while (i+1 < argc)
@@ -69,7 +69,7 @@ int main(int argc, char const *argv[])
 		} else if (av == 3){
 			l = atoi(argv[i+1]);
 		} else if (av == 4){
-            o = atoi(argv[i+1]);
+			o = atoi(argv[i+1]);
 		}
 		i = i + 2;
 	}
@@ -83,10 +83,10 @@ void generateTree(int n, int l, int o){
 	int i,j;
 	int hasPath = 0;
 
-    tree = calloc(n, sizeof(int*));
-    for(i = 0;i<n;i++) {
-    	tree[i] = calloc(n, sizeof(int));
-    }
+	tree = calloc(n, sizeof(int*));
+	for(i = 0;i<n;i++) {
+		tree[i] = calloc(n, sizeof(int));
+	}
 
 	//clears the middle section(a node can't go to itself)
 	for (i = 0; i < n; i++){
@@ -95,19 +95,19 @@ void generateTree(int n, int l, int o){
 
 	//start filling the tree with random numbers
 	for (i = 0; i < n - 1; i++){
-            hasPath = 0;
+		hasPath = 0;
 		for (j = i + 1; j < n; j++){
-            if(rand()%100 + 1 < o){  //check the odds if there is to be a path here
-                tree[i][j] = rand() % l + 1;
-                hasPath = 1;
-            } else {
-                tree[i][j] = 0;
-            }
+			if(rand()%100 + 1 < o){  //check the odds if there is to be a path here
+				tree[i][j] = rand() % l + 1;
+				hasPath = 1;
+			} else {
+				tree[i][j] = 0;
+			}
 		}
 
-        //check if tree has hanging nodes, if it does, add a random path
+		//check if tree has hanging nodes, if it does, add a random path
 		if(hasPath == 0){
-            tree[i][rand()%(n-(i+1)) + (i+1)] = rand() % l + 1;
+			tree[i][rand()%(n-(i+1)) + (i+1)] = rand() % l + 1;
 		}
 	}
 
