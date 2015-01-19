@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* Quick summary: Generates a tree structure with random values
+* Quick summary: Generates a spanning tree with random values
 * Version: 1.2
 
 ### How do I get set up? ###
