@@ -31,10 +31,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 
-checkParam(char*);
-generateTree(int,int,int);
+int checkParam(const char*);
+void generateTree(int,int,int);
 
 int main(int argc, char const *argv[])
 {
@@ -77,7 +78,7 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 
-generateTree(int n, int l, int o){
+void generateTree(int n, int l, int o){
 	int** tree;
 	int i,j;
 	int hasPath = 0;
@@ -139,7 +140,7 @@ generateTree(int n, int l, int o){
 	free(tree);
 }
 
-int checkParam(char *param){
+int checkParam(const char *param){
 	if(strcmp(param,"-s") == 0){
 		return 1;
 	} else if (strcmp(param,"-n") == 0){
