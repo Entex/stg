@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
     //Check for help
     if(argc >= 2 && strcmp(argv[1],"-h") == 0){
         printf("rnt [-s] [-n] [-l]\r\nGenerates a tree structure with random values\r\n\r\nOptions:\r\n -s number\t Set the seed for the random generator(default goes after time)\r\n -n number\t Set the number of nodes(default 4)\r\n -l number\t Set the maximum length between nodes(default 10)\r\n -o [1-100]\t Set the odds for paths to exist between nodes(default 20)\r\n");
-        return;
+        return 0;
     }
 
 	//Init with arguments
