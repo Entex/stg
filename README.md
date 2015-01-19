@@ -7,11 +7,12 @@
 
 ### How do I get set up? ###
 
-Put it somewhere on the computer, open cmd/terminal and navigate to the directory you put the file in
+Compile the file with your favorite c compiler(gcc, clang, etc), this will produce an output file which is now executable. Run it in cmd/terminal
 
 ### Contribution guidelines ###
 
-rnt -h
+Unix: rnt -h
+Windows: rnt.exe -h
 
 ### Who do I talk to? ###
 
