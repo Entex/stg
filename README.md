@@ -11,8 +11,8 @@ Compile the file with your favorite c compiler(gcc, clang, etc), this will produ
 
 ### Contribution guidelines ###
 
-Unix: rnt -h
-Windows: rnt.exe -h
+* Unix: rnt -h
+* Windows: rnt.exe -h
 
 ### Who do I talk to? ###
 
