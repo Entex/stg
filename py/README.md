@@ -1,8 +1,8 @@
 # Usage
 ```bash
-usage: rnt.py [-h] [-n NODES] [-l LENGTH] [-o ODDS] [-p] [--version]
+usage: stg.py [-h] [-n NODES] [-l LENGTH] [-o ODDS] [-p] [--version]
 
-RNT or Random Node Tree is a program that generates a spanning tree with random lengths between nodes used for calculating a spanning tree
+STG or Spanning Tree Generator is a program that generates a spanning tree with random lengths between nodes used for calculating a spanning tree
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -17,16 +17,16 @@ optional arguments:
 
 # Run
 ```bash
-python3 rnt.py -n 5 -o 33 -l 99                                                                                                                                                                                     *[master]
+python3 stg.py -n 5 -o 33 -l 99
 
 Output:
 -------
-tree = [[0 0 0 6 0];[0 49 0 0 0];[0 0 0 3 0];[6 0 3 0 67];[0 0 0 67 0]];
+[[0, 0, 0, 6, 0], [0, 49, 0, 0, 0], [0, 0, 0, 3, 0], [6, 0, 3, 0, 67], [0, 0, 0, 67, 0]]
 ```
 ## pretty
 Use the `-p` flag
 ```bash
-python3 rnt.py -n 30 -o 33 -l 99 -p
+python3 stg.py -n 30 -o 33 -l 99 -p
 
 Output:
 -------

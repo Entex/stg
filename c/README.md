@@ -1,9 +1,8 @@
 # Usage
 ```bash
-Usage: rnt [OPTION...]
-            RNT or Random Node Tree is a program that generates a spanning tree
-            with random lengths between nodes used for calculating a spanning
-            tree
+Usage: stg [OPTION...]
+            STG or Spanning Tree Generator is a program that generates a spanning tree
+            with random lengths between nodes used for calculating a spanning tree
 
   -l, --length=integer       Maximum length between nodes
   -n, --nodes=integer        Number of nodes
@@ -22,27 +21,27 @@ Report bugs to rjak@kth.se.
 # Compile
 
 ## Linux
-`gcc rnt.c -o rnt`
+`gcc stg.c -o stg`
 
 ## MacOS
 install brew `https://brew.sh/`
 
 `brew install argp-standalone`
 
-`gcc -I/opt/homebrew/Cellar/argp-standalone/1.3/include/ -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp rnt.c -o rnt`
+`gcc -I/opt/homebrew/Cellar/argp-standalone/1.3/include/ -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp stg.c -o stg`
 
 # Run
 ```bash
-./rnt -n 5 -l 30 -o 35
+./stg -n 5 -l 30 -o 35
 
 Output:
 -------
-tree = [[0 0 0 10 12];[0 0 22 0 0];[0 22 0 23 0];[10 0 23 0 2];[12 0 0 2 0]];
+[[0, 0, 0, 10, 12], [0, 0, 22, 0, 0], [0, 22, 0, 23, 0], [10, 0, 23, 0, 2], [12, 0, 0, 2, 0]]
 ```
 ## pretty
 use the `-p` flag for a pretty output
 ```bash
-./rnt -p -n 30 -o 35 -l 99
+./stg -p -n 30 -o 35 -l 99
 
 Output:
 -------
