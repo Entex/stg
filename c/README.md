@@ -19,7 +19,7 @@ for any corresponding short options.
 Report bugs to rjak@kth.se.
 ```
 
-# compile
+# Compile
 
 ## Linux
 `gcc rnt.c -o rnt`
