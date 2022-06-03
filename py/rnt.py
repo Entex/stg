@@ -29,7 +29,7 @@ def generateTree(nodes: int, length: int, odds: int):
 
         # Check if tree has haning nodes, if it does, add a random path
         if not (hasPath):
-            tree[i][random.randint(0, nodes-1)] = random.randint(1, length)
+            tree[i][random.randint(i+1, nodes-1)] = random.randint(1, length)
 
     # Mirror the tree
     for i in range(nodes):
