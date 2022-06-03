@@ -2,7 +2,8 @@
 ```bash
 usage: stg.py [-h] [-n NODES] [-l LENGTH] [-o ODDS] [-p] [--version]
 
-STG or Spanning Tree Generator is a program that generates a spanning tree with random lengths between nodes used for calculating a spanning tree
+STG or Spanning Tree Generator is a program that generates a 
+spanning tree with random lengths between nodes used for calculating a spanning tree
 
 optional arguments:
   -h, --help            show this help message and exit
