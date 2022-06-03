@@ -26,7 +26,9 @@ Report bugs to rjak@kth.se.
 
 ## MacOS
 install brew `https://brew.sh/`
+
 `brew install argp-standalone`
+
 `gcc -I/opt/homebrew/Cellar/argp-standalone/1.3/include/ -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp rnt.c -o rnt`
 
 # Run
