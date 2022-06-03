@@ -1,4 +1,4 @@
-## Usage
+# Usage
 ```bash
 usage: rnt.py [-h] [-n NODES] [-l LENGTH] [-o ODDS] [-p] [--version]
 
@@ -15,20 +15,20 @@ optional arguments:
   --version             show program's version number and exit
 ```
 
-## Run
+# Run
 ```bash
 python3 rnt.py -n 5 -o 33 -l 99                                                                                                                                                                                     *[master]
 
-output:
+Output:
 -------
 tree = [[0 0 0 6 0];[0 49 0 0 0];[0 0 0 3 0];[6 0 3 0 67];[0 0 0 67 0]];
 ```
-### pretty
+## pretty
 Use the `-p` flag
 ```bash
 python3 rnt.py -n 30 -o 33 -l 99 -p
 
-output:
+Output:
 -------
  0 56  0 75  0 46  0  0  1  0  0  0 98  0  0  0 53  0  0  1  0  0 93  5  0  0  0 79  0  0 
 56  0  0 43  0  0  5  0  0 55  0  0  0  0 60  0  5  0  0  0  0  0  0 58  0  0  0 71  0  0 

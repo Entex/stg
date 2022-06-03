@@ -19,22 +19,25 @@ for any corresponding short options.
 Report bugs to rjak@kth.se.
 ```
 
-## compile
+# compile
 
-### Linux
+## Linux
 `gcc rnt.c -o rnt`
 
-### MacOS
+## MacOS
 install brew `https://brew.sh/`
 `brew install argp-standalone`
 `gcc -I/opt/homebrew/Cellar/argp-standalone/1.3/include/ -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp rnt.c -o rnt`
 
-## Run
+# Run
 ```bash
 ./rnt -n 5 -l 30 -o 35
+
+Output:
+-------
 tree = [[0 0 0 10 12];[0 0 22 0 0];[0 22 0 23 0];[10 0 23 0 2];[12 0 0 2 0]];
 ```
-### pretty
+## pretty
 use the `-p` flag for a pretty output
 ```bash
 ./rnt -p -n 30 -o 35 -l 99
