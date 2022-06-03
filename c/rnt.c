@@ -140,21 +140,21 @@ void generateTree(int nodes, int length, int odds, bool pretty){
         }
     } else {
         //print tree
-        printf("tree = [");
+        printf("[");
         for (i = 0; i < nodes; i++){
             printf("[");
             for (j = 0; j < nodes; j++){
                 printf("%d", tree[i][j]);
                 if (j+1 < nodes){
-                    printf(" ");
+                    printf(", ");
                 }
             }
             printf("]");
             if (i+1 < nodes){
-                printf(";");
+                printf(", ");
             }
         }
-        printf("];\n");
+        printf("]\n");
     }
 
 	//free matrix

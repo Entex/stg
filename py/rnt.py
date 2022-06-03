@@ -46,16 +46,16 @@ def generateTree(nodes: int, length: int, odds: int):
             print('')
     else:
         # Print tree
-        print('tree = [', end='')
+        print('[', end='')
         for i in range(nodes):
             print('[', end='')
             for j in range(nodes):
                 print(tree[i][j], end='')
                 if (j+1 < nodes):
-                    print(' ', end='')
+                    print(', ', end='')
             print(']', end='')
             if (i+1 < nodes):
-                print(';', end='')
-        print('];')
+                print(', ', end='')
+        print(']')
 
 generateTree(args.nodes, args.length, args.odds)
