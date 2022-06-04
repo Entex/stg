@@ -3,7 +3,7 @@
 ### What is this repository for? ###
 
 * Quick summary: Generates a spanning tree with random values
-* Version: 1.2
+* Version: 1.3
 
 ### How do I get set up? ###
 
