@@ -6,12 +6,12 @@
  *
  *********************
  *
- * Copyright (c) 2015  Robin Jakobsson
+ * Copyright (c) 2015-2022  Robin Jakobsson
  * All Rights Reserved.
  *
  *********************
  *
- * Version: 1.2
+ * Version: 1.3
  *
  *********************
  *
@@ -36,7 +36,7 @@
 #include <argp.h>
 #include <stdbool.h>
 
-const char *argp_program_version = "Spanning Tree Generator 1.2";
+const char *argp_program_version = "Spanning Tree Generator 1.3";
 const char *argp_program_bug_address = "rjak@kth.se"; //discontinued
 static char doc[] = "STG or Spanning Tree Generator is a program that generates a spanning tree with random lengths between nodes used for calculating a spanning tree";
 static struct argp_option options[] = { 
