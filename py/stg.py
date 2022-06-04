@@ -10,7 +10,7 @@ parser.add_argument('-l', '--length', dest='length', type=int, default=10, help=
 parser.add_argument('-o', '--odds', dest='odds', type=int, default=20, help='Odds of path between nodes (0-100)')
 parser.add_argument('-p', '--pretty', dest='pretty', action='store_true', help='print pretty format')
 
-parser.add_argument('--version', action='version', version='Random Node Tree 1.2')
+parser.add_argument('--version', action='version', version='Random Node Tree 1.3')
 
 args = parser.parse_args();
 
